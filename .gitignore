@@ -1,0 +1,5 @@
+windows/*
+src/*
+.eggs
+*.pyc
+python_scripts/config.py
