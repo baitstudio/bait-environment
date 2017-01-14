@@ -38,23 +38,23 @@ def register():
         system_name = "unix"
 
     mount = (
-        "{#project.disk." + system_name + "}/{#project.root}/{#project.name}"
+        "{#project.disk." + system_name + "}/{#project.root}"
     )
     task = "{#task.name}"
-    tasks = "Tasks/" + task
+    tasks = "tasks/" + task
     assetversion = "{#assetversion.asset.type.short}/v{#assetversion.version}"
     file_component = "{#component.name}{#component.file_type}"
     sequence_component = (
         "{#container.name}/{#container.name}.{#component.name}" +
         "{#component.file_type}"
     )
-    assets = "Assets/{#assetbuild.type.name}/{#assetbuild.name}"
+    assets = "library/{#assetbuild.type.name}/{#assetbuild.name}"
     shot = "{#shot.name}"
-    shots = "Shots/" + shot
+    shots = "shots/" + shot
     sequence = "{#sequence.name}"
-    sequences = "Sequences/" + sequence
+    sequences = "sequences/" + sequence
     episode = "{#episode.name}"
-    episodes = "Episodes/" + episode
+    episodes = "episodes/" + episode
 
     task_structure = {
         "work": {

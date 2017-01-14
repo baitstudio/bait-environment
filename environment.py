@@ -8,21 +8,19 @@ environment = {}
 
 # PYTHONPATH
 environment["PYTHONPATH"] = [
-    os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "ftrack-locations"),
     os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "ftrack-template"),
-    os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "pyblish-deadline"),
-    os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "pyblish-bumpybox"),
+    os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "ftrack-locations"),
+    os.path.join(
+        os.environ["CONDA_GIT_REPOSITORY"],
+        "pyblish-maya",
+        "pyblish_maya",
+        "pythonpath"
+    ),
     os.path.join(
         os.environ["CONDA_GIT_REPOSITORY"],
         "pyblish-bumpybox",
         "pyblish_bumpybox",
         "environment_variables",
-        "pythonpath"
-    ),
-    os.path.join(
-        os.environ["CONDA_GIT_REPOSITORY"],
-        "pyblish-maya",
-        "pyblish_maya",
         "pythonpath"
     ),
 ]
@@ -70,9 +68,6 @@ environment["FTRACK_LOCATIONS_MODULE"] = ["ftrack_template_disk"]
 # FTRACK_CONNECT_PLUGIN_PATH
 environment["FTRACK_CONNECT_PLUGIN_PATH"] = [
     os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "ftrack-hooks"),
-    os.path.join(
-        os.path.dirname(__file__), "environment", "FTRACK_CONNECT_PLUGIN_PATH"
-    ),
 ]
 
 utils.write_environment(environment)

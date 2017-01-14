@@ -26,10 +26,9 @@ dependencies:
   - https://github.com/pyblish/pyblish-houdini.git
   - https://github.com/tokejepsen/pyblish-standalone.git
   - https://github.com/tokejepsen/pyblish-aftereffects.git
-  - https://github.com/bumpybox/pipeline-schema.git
   - https://github.com/pyblish/pyblish-nuke.git
   - https://github.com/pyblish/pyblish-hiero.git
-  - https://github.com/tokejepsen/pyblish-lite.git
+  - https://github.com/pyblish/pyblish-lite.git
   - https://github.com/pyblish/pyblish-maya.git
   - https://github.com/tokejepsen/ftrack-connect-environment.git:
     - python $REPO_PATH/environment.py
