@@ -23,12 +23,30 @@ environment["PYTHONPATH"] = [
         "environment_variables",
         "pythonpath"
     ),
+    os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "pyblish-hiero"),
 ]
 
 # PYBLISHPLUGINPATH
 environment["PYBLISHPLUGINPATH"] = [
     os.path.join(root, "environment", "PYBLISHPLUGINPATH", "maya"),
     os.path.join(root, "environment", "PYBLISHPLUGINPATH", "ftrack"),
+]
+
+# HIERO_PLUGIN_PATH
+environment["HIERO_PLUGIN_PATH"] = [
+    os.path.join(
+        os.environ["CONDA_GIT_REPOSITORY"],
+        "pyblish-hiero",
+        "pyblish_hiero",
+        "hiero_plugin_path",
+    ),
+    os.path.join(
+        os.environ["CONDA_GIT_REPOSITORY"],
+        "pyblish-bumpybox",
+        "pyblish_bumpybox",
+        "environment_variables",
+        "hiero_plugin_path"
+    ),
 ]
 
 # NUKE_PATH

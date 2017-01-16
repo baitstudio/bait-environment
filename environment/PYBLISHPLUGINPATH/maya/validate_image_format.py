@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class BumpyboxMayaValidateImageFormat(pyblish.api.InstancePlugin):
+class BaitMayaValidateImageFormat(pyblish.api.InstancePlugin):
 
     order = pyblish.api.ValidatorOrder
     label = "Image Format"

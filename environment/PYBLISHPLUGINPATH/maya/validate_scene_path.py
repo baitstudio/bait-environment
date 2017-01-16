@@ -5,7 +5,7 @@ import pymel
 import ftrack_template
 
 
-class BumpyboxMayaRepairScene(pyblish.api.Action):
+class BaitMayaRepairScene(pyblish.api.Action):
 
     label = "Repair"
     icon = "wrench"
