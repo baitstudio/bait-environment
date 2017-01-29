@@ -13,7 +13,7 @@ class BaitMayaRepairScene(pyblish.api.Action):
 
     def process(self, context, plugin):
 
-        expected = BumpyboxMayaValidateScene().get_expected_path(context)
+        expected = BaitMayaValidateScene().get_expected_path(context)
 
         if os.path.exists(expected):
             msg = "\"{0}\" already exists. Please repair manually."
@@ -26,11 +26,11 @@ class BaitMayaRepairScene(pyblish.api.Action):
             pymel.core.system.saveAs(expected)
 
 
-class BumpyboxMayaValidateScene(pyblish.api.ContextPlugin):
+class BaitMayaValidateScene(pyblish.api.ContextPlugin):
 
     order = pyblish.api.ValidatorOrder
     label = "Scene"
-    actions = [BumpyboxMayaRepairScene]
+    actions = [BaitMayaRepairScene]
     hosts = ["maya"]
 
     def process(self, context):
