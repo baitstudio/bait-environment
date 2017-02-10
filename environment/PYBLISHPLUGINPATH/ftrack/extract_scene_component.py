@@ -2,7 +2,7 @@ import pyblish.api
 import ftrack_locations
 
 
-class BaitFtrackExtractSceneComponent(pyblish.api.InstancePlugin):
+class BaitEnvironmentFtrackExtractSceneComponent(pyblish.api.InstancePlugin):
     """ Appending output files from local extraction as components. """
 
     order = pyblish.api.ExtractorOrder

@@ -1,7 +1,7 @@
 import pyblish.api
 
 
-class BaitMayaValidateImageFormat(pyblish.api.InstancePlugin):
+class BaitEnvironmentMayaValidateImageFormat(pyblish.api.InstancePlugin):
 
     order = pyblish.api.ValidatorOrder
     label = "Image Format"

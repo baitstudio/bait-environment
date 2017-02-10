@@ -5,7 +5,7 @@ import pymel
 import ftrack_template
 
 
-class BaitMayaRepairScene(pyblish.api.Action):
+class BaitEnvironmentMayaRepairScenePath(pyblish.api.Action):
 
     label = "Repair"
     icon = "wrench"
@@ -13,7 +13,9 @@ class BaitMayaRepairScene(pyblish.api.Action):
 
     def process(self, context, plugin):
 
-        expected = BaitMayaValidateScene().get_expected_path(context)
+        expected = BaitEnvironmentMayaValidateScenePath().get_expected_path(
+            context
+        )
 
         if os.path.exists(expected):
             msg = "\"{0}\" already exists. Please repair manually."
@@ -26,11 +28,12 @@ class BaitMayaRepairScene(pyblish.api.Action):
             pymel.core.system.saveAs(expected)
 
 
-class BaitMayaValidateScene(pyblish.api.ContextPlugin):
+class BaitEnvironmentMayaValidateScenePath(pyblish.api.ContextPlugin):
+    """ Validate the scene path. """
 
     order = pyblish.api.ValidatorOrder
-    label = "Scene"
-    actions = [BaitMayaRepairScene]
+    label = "Scene Path"
+    actions = [BaitEnvironmentMayaRepairScenePath]
     hosts = ["maya"]
 
     def process(self, context):

@@ -26,12 +26,6 @@ environment["PYTHONPATH"] = [
     os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "pyblish-hiero"),
 ]
 
-# PYBLISHPLUGINPATH
-environment["PYBLISHPLUGINPATH"] = [
-    os.path.join(root, "environment", "PYBLISHPLUGINPATH", "maya"),
-    os.path.join(root, "environment", "PYBLISHPLUGINPATH", "ftrack"),
-]
-
 # HIERO_PLUGIN_PATH
 environment["HIERO_PLUGIN_PATH"] = [
     os.path.join(
@@ -86,6 +80,9 @@ environment["FTRACK_LOCATIONS_MODULE"] = ["ftrack_template_disk"]
 # FTRACK_CONNECT_PLUGIN_PATH
 environment["FTRACK_CONNECT_PLUGIN_PATH"] = [
     os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "ftrack-hooks"),
+    os.path.join(
+        os.path.dirname(__file__), "environment", "FTRACK_CONNECT_PLUGIN_PATH"
+    ),
 ]
 
 utils.write_environment(environment)
