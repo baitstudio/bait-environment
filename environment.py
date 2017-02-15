@@ -24,6 +24,7 @@ environment["PYTHONPATH"] = [
         "pythonpath"
     ),
     os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "pyblish-hiero"),
+    os.path.join(os.environ["CONDA_GIT_REPOSITORY"], "maya-capture"),
 ]
 
 # HIERO_PLUGIN_PATH
