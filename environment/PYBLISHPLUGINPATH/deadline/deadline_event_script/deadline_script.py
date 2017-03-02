@@ -14,15 +14,15 @@ def main():
             os.environ[str(key)] = str(value)
 
     status_mapping = {
-        "OnJobSubmitted": "Render Queued",
+        "OnJobSubmitted": "Render",
         "OnJobStarted": "Render",
         "OnJobFinished": "Artist Review",
-        "OnJobRequeued": "Render Queued",
+        "OnJobRequeued": "Render",
         "OnJobFailed": "Render Failed",
-        "OnJobSuspended": "Render Queued",
-        "OnJobResumed": "Render Queued",
-        "OnJobPended": "Render Queued",
-        "OnJobReleased": "Render Queued",
+        "OnJobSuspended": "Render",
+        "OnJobResumed": "Render",
+        "OnJobPended": "Render",
+        "OnJobReleased": "Render",
         "OnJobDeleted": "Artist Review",
     }
 
