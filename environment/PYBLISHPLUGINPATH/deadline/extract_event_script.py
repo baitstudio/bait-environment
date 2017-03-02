@@ -4,7 +4,7 @@ import shutil
 import pyblish.api as api
 
 
-class BumpyboxEnvironmentDeadlineExtractEventScript(api.InstancePlugin):
+class BaitEnvironmentDeadlineExtractEventScript(api.InstancePlugin):
     """ Add event script for updating Ftrack status. """
 
     order = api.ExtractorOrder
