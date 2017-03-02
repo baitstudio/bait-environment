@@ -15,4 +15,5 @@ class BaitEnvironmentMayaValidateImageFormat(pyblish.api.InstancePlugin):
         valid_extensions = [".exr", ".png", ".jpeg"]
 
         msg = "Output \"{0}\" image format is not valid.".format(ext)
+        msg += " Select from {0}.".format(valid_extensions)
         assert ext in valid_extensions, msg
