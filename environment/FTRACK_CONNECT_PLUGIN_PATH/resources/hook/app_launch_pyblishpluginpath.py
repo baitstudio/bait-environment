@@ -65,6 +65,10 @@ def modify_application_launch(event):
         ),
         os.path.join(
             plugins_path,
+            "deadline"
+        ),
+        os.path.join(
+            plugins_path,
             app_id.split("_")[0]
         ),
         os.path.join(
