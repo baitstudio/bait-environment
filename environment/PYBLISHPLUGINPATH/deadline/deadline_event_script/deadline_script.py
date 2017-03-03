@@ -23,7 +23,6 @@ def main():
         "OnJobResumed": "Render",
         "OnJobPended": "Render",
         "OnJobReleased": "Render",
-        "OnJobDeleted": "Artist Review",
     }
 
     # Fail safe for non-existing job statuses
