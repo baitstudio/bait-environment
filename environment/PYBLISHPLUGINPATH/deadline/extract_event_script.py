@@ -11,15 +11,6 @@ class BaitEnvironmentDeadlineExtractEventScript(api.InstancePlugin):
     label = "Event Script"
     families = ["deadline"]
 
-    def copytree(self, src, dst, symlinks=False, ignore=None):
-        for item in os.listdir(src):
-            s = os.path.join(src, item)
-            d = os.path.join(dst, item)
-            if os.path.isdir(s):
-                shutil.copytree(s, d, symlinks, ignore)
-            else:
-                shutil.copy2(s, d)
-
     def process(self, instance):
 
         data = instance.data.get("deadlineData", {"job": {}, "plugin": {}})
@@ -36,7 +27,7 @@ class BaitEnvironmentDeadlineExtractEventScript(api.InstancePlugin):
         # Copy required modules
         if os.path.exists(os.path.join(directory, "PYTHONPATH")):
             shutil.rmtree(os.path.join(directory, "PYTHONPATH"))
-        self.copytree(
+        shutil.copytree(
             os.path.join(
                 os.path.dirname(__file__),
                 "deadline_event_script",
