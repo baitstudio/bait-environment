@@ -11,7 +11,7 @@ dependencies:
   - pyperclip
 - git:
   - https://github.com/pyblish/pyblish-base.git@9a3d78772f73e5905c131f9431cc3a266b23cbf7
-  - https://github.com/pyblish/pyblish-lite.git@51ff4850ca13fddbc60137a74fd0e2056fdbbc29
+  - https://github.com/pyblish/pyblish-lite.git@b1737db3242d485a0377dc52265ebae805268a97
   - https://github.com/tokejepsen/pyblish-standalone.git@bf29678c80e0f8e0a70f5738b61352e528818ad1
   - https://github.com/pyblish/pyblish-nuke.git@061de849f501063ad92c532b764847c8883061d7
   - https://github.com/pyblish/pyblish-maya.git@b81e6edd67e9969348a133c8a6e630ab92fd6c3f
