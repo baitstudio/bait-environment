@@ -20,7 +20,7 @@ dependencies:
   - https://github.com/pyblish/pyblish-ftrack.git@577900a3d18a1e82778e92d974d59087b0c45b47
   - https://github.com/tokejepsen/pyblish-deadline.git@cdcdb8408cec5e132342f94aa7191e0ed64ecfdd
   - https://github.com/tokejepsen/pyblish-aftereffects.git@84622fd55b1af9d8b90aecdfac0a1f30844b86f4
-  - https://github.com/bumpybox/pyblish-bumpybox.git@322aec994310a3ca56401d81d73c8d15de157c5f
+  - https://github.com/bumpybox/pyblish-bumpybox.git@5e22b91e6bcc1d8eab67bf1542c8f315c8a16a65
   - https://github.com/abstractfactory/maya-capture.git@bdea21ad0cfa008b70d3419438687faf535e85b7
   - https://bitbucket.org/ftrack/QtExt.git@f88d1db8d5b7a0f5162f29a0701166d3be24fd19
   - https://bitbucket.org/ftrack/ftrack-connect.git@60eb9f979f0f6b3baaadc9fcee67877a24fc45e8
