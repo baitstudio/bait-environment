@@ -44,6 +44,21 @@ environment["HIERO_PLUGIN_PATH"] = [
     ),
 ]
 
+# Add in maya plugins and shelf preferences
+environment["MAYA_SCRIPT_PATH"] = [
+    os.path.join(
+        os.path.dirname(__file__), "environment", "MAYA_SCRIPT_PATH"
+    )
+]
+
+environment["MAYA_SHELF_PATH"] = [
+    os.path.join(os.path.dirname(__file__), "environment", "MAYA_SHELF_PATH")
+]
+
+environment["XBMLANGPATH"] = [
+    os.path.join(os.path.dirname(__file__), "environment", "XBMLANGPATH")
+]
+
 # NUKE_PATH
 environment["NUKE_PATH"] = [
     os.path.join(
